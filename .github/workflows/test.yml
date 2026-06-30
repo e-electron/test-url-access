@@ -11,7 +11,7 @@ jobs:
           curl -o /dev/null -s -w "%{http_code}" "https://www.cqupt.edu.cn/"
           echo ""
           echo "=== 返回的 HTML 内容（前100行）==="
-          curl -s "https://agree.xiaohongshu.com/h5/terms/ZXXY20230227002/-1" | head -100
+          curl -s "https://www.cqupt.edu.cn/" | head -100
           echo ""
           echo "=== 检查是否有实际文字内容 ==="
-          curl -s "https://agree.xiaohongshu.com/h5/terms/ZXXY20230227002/-1" | grep -i "privacy\|隐私\|policy\|条款" || echo "未找到任何隐私政策相关文字"
+          curl -s "https://www.cqupt.edu.cn/" | grep -i "privacy\|隐私\|policy\|条款" || echo "未找到任何隐私政策相关文字"
