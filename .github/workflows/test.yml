@@ -8,7 +8,7 @@ jobs:
         run: |
           echo "=== HTTP 状态码 ==="
           # curl -o /dev/null -s -w "%{http_code}" "https://agree.xiaohongshu.com/h5/terms/ZXXY20230227002/-1"
-          curl -o /dev/null -s -w "%{http_code}" "https://www.xiaohongshu.com/explore"
+          curl -o /dev/null -s -w "%{http_code}" "https://www.baidu.com"
           echo ""
           echo "=== 返回的 HTML 内容（前100行）==="
           curl -s "https://agree.xiaohongshu.com/h5/terms/ZXXY20230227002/-1" | head -100
